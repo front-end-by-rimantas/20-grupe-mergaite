@@ -5,8 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mergaite</title>
+    <!-- comments (add/remove): ctrl + / -->
+    <!-- TODO: add favicon element -->
     <style>
-        main {
+        /* Stiliaus suvienodinimas visiems elementams (reset) */
+        body,
+        body * {
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* Mano norimas psl stilius */
+        body {
+            background-color: #F8F8F8;
+        }
+
+        body>main {
             display: inline-block;
             width: 800px;
             margin-top: 40px;
@@ -19,7 +36,7 @@
             width: 100%;
         }
 
-        img {
+        header>img {
             display: inline-block;
             float: left;
         }
@@ -32,6 +49,20 @@
         section {
             display: inline-block;
             width: 100%;
+            padding: 20px;
+        }
+
+        div {
+            display: inline-block;
+            width: 360px;
+            float: left;
+            margin-right: 40px;
+        }
+
+        section>img {
+            display: inline-block;
+            width: 360px;
+            float: right;
         }
     </style>
 </head>
